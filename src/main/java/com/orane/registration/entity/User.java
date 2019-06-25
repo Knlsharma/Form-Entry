@@ -1,4 +1,4 @@
-package com.orane.registration.module.entity;
+package com.orane.registration.entity;
 
 import java.util.List;
 

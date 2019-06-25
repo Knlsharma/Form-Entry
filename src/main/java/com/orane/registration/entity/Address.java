@@ -1,4 +1,4 @@
-package com.orane.registration.module.entity;
+package com.orane.registration.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
