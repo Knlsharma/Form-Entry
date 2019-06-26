@@ -7,8 +7,10 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+@CrossOrigin(origins = "*")
 @Entity
 @Table(name="master_address")
 public class Address {
@@ -41,7 +43,7 @@ public class Address {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Address(int id, String address1, String address2, String city, int pinCode, String state, User user) {
+	public Address(String address1, String address2,int id, String city, int pinCode, String state, User user) {
 		super();
 		this.id = id;
 		this.address1 = address1;
