@@ -2,6 +2,9 @@ package com.orane.registration.entity;
 
 import java.util.List;
 
+import org.springframework.hateoas.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,7 +16,8 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="master_user")
-public class User {
+public class User
+{
 	
 	@Id
 	private int id;
