@@ -1,6 +1,5 @@
 package com.orane.registration.controller;
 
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +24,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.orane.registration.entity.User;
 import com.orane.registration.repository.Repository;
-
 
 
 
@@ -153,7 +151,18 @@ public class ControllerClass
         HttpHeaders delHead = new HttpHeaders();
         delHead.add("Language" , "en-US");
 		delHead.getDate();
+	//	delHead.setLocation();
+	//	delHead.USER_AGENT;
+	
        return new ResponseEntity<>("Record Deleted", delHead,HttpStatus.OK);
     }
 	
+	/**********  Expose ALL MAPPING **********/
+	/*
+	@GetMapping("/expose")
+	public ResponseEntity<List<User>> getAll(value =  )
+	{
+	
+	}
+	*/
 }
