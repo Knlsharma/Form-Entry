@@ -13,6 +13,7 @@ Application contains two modules:
 * Angular CLI
 * Spring Boot 2.1
 * Maven 3+
+* PostgresSQL 11
 
 
 ## Prerequisites:
