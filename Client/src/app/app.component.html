@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html lang="en">  
+<head>    
+<title>My first Bootstrap page </title>    
+    
+
+ </head> 
+ <body>
+<div class="container" style="max-width:600px;margin:60px auto;">
+
+	<form role="form" #useform = "ngForm" (ngSubmit)="onsubmit()" novalidate >
+
+	{{useform.value | json}}
+	
+	<hr/>
+
+	{{userMode | json}}
+
+	   <div class="form-group">
+	      <label for="name">Id</label>
+	      <input type="number" class="form-control" name = "id" id="_id" [(ngModel)]="userMode.id" placeholder="Enter Id">
+     </div>
+     
+	   <div class="form-group">
+	      <label for="name">Name</label>
+	      <input type="address" class="form-control" name = "name" id="_name" [(ngModel)]="userMode.name" placeholder="Enter name">
+     </div>
+     
+	   <div class="form-group">
+	      <label for="email">Email</label>
+	      <input type="email" class="form-control" name ="email" id="_email" [(ngModel)]="userMode.email" placeholder="Enter email">
+     </div> 
+     
+       <div ngModelGroup ="address">
+	   
+		
+		<div class="form-group">
+			<label for="name">ADDRESS Id</label>
+			<input type="number" class="form-control" name = "addid" id="_id" [(ngModel)]="addressModel.id" placeholder="Enter Id">
+	   </div>
+	
+
+	   <div class="form-group">
+	      <label for="Address">Address 1 </label>
+	      <input type="text" class="form-control" id="_address1" name ="address1" [(ngModel)]="addressModel.address1" placeholder="Enter address">
+     </div> 
+     
+     <div class="form-group">
+	      <label for="Address"> Address 2</label>
+	      <input type="text" class="form-control" id="_address2" name ="address2" [(ngModel)]="addressModel.address2" placeholder="Enter address">
+     </div> 
+
+     <div class="form-group">
+	      <label for="City">City</label>
+	      <input type="text" class="form-control" id="_city" name ="city" [(ngModel)]="addressModel.city" placeholder="Enter city">
+     </div> 
+
+
+     <div class="form-group">
+	      <label for="pincode ">Pincode</label>
+	      <input type="number" class="form-control" id="_pincode" name="pincode" [(ngModel)]="addressModel.pinCode" placeholder="Enter pincode">
+     </div> 
+
+     <div class="form-group">
+	      <label for="state">State</label>
+	      <input type="text" class="form-control" id="_state" name="state" [(ngModel)]="addressModel.state" placeholder="Enter state">
+     </div> 
+
+       </div>          
+
+       <button type="submit" class="btn btn-primary" >SUBMIT HERE !</button>
+       
+	</form>
+</div>
+
+<h2>HTML Table</h2>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+	<th>Email</th>
+	 <th>Add Id</th>
+	 <th>Address 1</th>
+	 <th>Address 2</th>
+	 <th>City</th>
+	 <th>Pincode</th>
+     <th>State</th>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>S60</td> 
+    <td>50</td>
+	<td>50</td>
+	<td>50</td>
+	<td>50</td>
+	<td>50</td>
+        <td>50</td>
+        <td>50</td>
+       </tr> 
+
+</table>
+
+</body>
+</html>
