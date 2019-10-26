@@ -1,4 +1,4 @@
-# CRUD SPA (Single Page Apllication) with Angular 7.0 and Spring Boot 2.1
+# CRUD SPA (Single Page Application) with Angular 7.0 and Spring Boot 2.1
 
 Application contains two modules:
 * client - frontend generated using Angular CLI (https://cli.angular.io)
